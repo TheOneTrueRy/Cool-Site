@@ -3,24 +3,25 @@
 header{
   background-color: rgb(93, 11, 93);
   border: 0.2em solid black;
+  height: 7vh;
 }
 
 body{
   margin: 0.2vh;
-  max-height: 100vh;
 }
 
 footer{
   background-color: rgb(93, 11, 93);
   border: 0.2em solid black;
-  margin-top: 3vw;
-  height: 21vh;
+  /* margin-top: 3vw; */
+  height: 13vh;
   width: 99.4vw;
 }
 
-h2{
+h1{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 200;
+  text-align: center;
 }
 
 img{
@@ -28,9 +29,9 @@ img{
   width: 18vw;
 }
 
-/* h3{
-  text-align: center;
-} */
+main{
+  min-height: 72vh;
+}
 
 /* SECTION Classes */
 
@@ -46,13 +47,8 @@ justify-content: center;
   display: flex;
 }
 
-.height{
-  height: 0px;
-}
-
 .header-text{
   color: white;
-  font-family:Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 2.5em;
   margin-bottom: 0.2em;
@@ -64,16 +60,9 @@ justify-content: center;
   margin-top: 6vh;
   margin-right: 35vw;
   margin-left: 20vw;
-  text-align: center;
   font-size: 1.18em;
-  margin-bottom: -2vw;
-  padding-top: -1vh;
-}
+  max-width: 35vw;
 
-.article-text{
-  margin-left: 23vw;
-  margin-right: 36vw;
-  margin-bottom: -1vw;
 }
 
 .align-items-start{
@@ -90,6 +79,12 @@ justify-content: center;
 
 .alt-article{
   margin-right: 4vw;
+  flex-direction: column;
+  height: 0px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  transform: translateY(-20vh);
 }
 
 .alt-article-text{
@@ -97,10 +92,3 @@ justify-content: center;
   margin-top: 7px;
   width: 18vw;
 }
-
-.direction{
-  flex-direction: column;
-  transform: translateX(+50px);
-  transform: translateY(-110px);
-}
-
